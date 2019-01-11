@@ -176,12 +176,12 @@ git diff --staged
 
 ##### Which branches are merged with master, and can be cleaned up?
 ```bash
-git	branch --merged	master
+git branch --merged	master
 ```
 
 ##### Which branches are not merged with master yet?
 ```bash
-git	branch --no-merged master
+git branch --no-merged master
 ```
 
 ##### Overwrite the working area file with the staging area version from the last commit
@@ -342,17 +342,17 @@ git blame <filename>
 
 ##### use the diff-filter flag on log to see all commits where the file was deleted:
 ```bash
-git	log	—diff-filter=D -- <deleted_file>
+git log —diff-filter=D -- <deleted_file>
 ```
 
 ##### git blame using the parent commit
 ```bash
-git	blame	<commit>^	--	<deleted_file>
+git blame <commit>^ -- <deleted_file>
 ```
 
 ##### Git blame by lines
 ```bash
-git	blame	-L1,5	-- <file>
+git blame -L1,5 -- <file>
 ```
 
 ##### To find which commit introduced a bug
